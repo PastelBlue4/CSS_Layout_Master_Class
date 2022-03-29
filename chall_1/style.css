@@ -1,3 +1,56 @@
-#btn {
-  color: red;
+.postheader {
+  display: flex;
+  justify-content: space-between;
+  margin: 7px;
+}
+.title {
+  font-size: 75px;
+}
+.num {
+  margin-top: 45px;
+  font-size: 25px;
+}
+hr {
+  border: soild 2px;
+}
+.candc {
+  display: flex;
+}
+.letter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.colour_list {
+  margin-left: 30px;
+}
+
+.circle_container {
+  width: 500px;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.circle-skyblue {
+  width: 150px;
+  height: 150px;
+  border-radius: 105px;
+  background: skyblue;
+  align-self: center;
+}
+.circle-gray {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background: gray;
+}
+
+.circle-green {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background: green;
 }
