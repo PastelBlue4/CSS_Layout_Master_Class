@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  width: 650px;
+  width: 590px;
   height: 130px;
   background: black;
   color: white;
@@ -43,7 +43,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 210px);
+  grid-template-columns: repeat(3, 190px);
   grid-template-rows: repeat(3, 280px);
   grid-template-areas:
     "left-bad left-bad right-empty"
@@ -56,7 +56,8 @@ body {
   background: red;
   grid-area: left-bad;
   font-size: 200px;
-  text-align: left;
+  display: flex;
+  align-items: flex-end;
 }
 
 .right-empty {
@@ -71,11 +72,12 @@ body {
 
 .religion {
   text-align: start;
-  font-size: 200px;
+  font-size: 180px;
 }
 
 .bottom-white {
   font-size: 30px;
   margin-left: 10px;
+  margin-top: 200px;
   color: white;
 }
