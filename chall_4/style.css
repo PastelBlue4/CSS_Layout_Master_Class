@@ -7,12 +7,90 @@ body {
   height: 100vh;
 }
 
-.sexyspan {
-  transform: scaleY(-1);
-}
-
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  grid-template-rows: repeat(3, 3fr);
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas:
+    "black_box puple_box white_box_left white_box_right"
+    "red_box white_box white_box_left white_box_right"
+    "red_box yello_box white_box_left white_box_right";
+}
+
+.black_box {
+  grid-area: black_box;
+  background: black;
+  color: white;
+  font-size: 28px;
+}
+.transbox {
+  display: flex;
+}
+
+.red_box {
+  background: red;
+  grid-area: red_box;
+}
+.red_box_letter {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 22px;
+}
+.puple_box {
+  grid-area: puple_box;
+  background: rgb(88, 45, 245);
+}
+.white_box_left {
+  grid-area: white_box_left;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.white_box_right {
+  grid-area: white_box_right;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.yello_box {
+  grid-area: yello_box;
+  background: rgb(238, 198, 65);
+  font-size: 22px;
+}
+.yello_box_letter {
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.white_box {
+  grid-area: white_box;
+}
+
+.left_letter {
+  margin-top: 7px;
+  font-size: 20px;
+}
+
+.right_letter {
+  margin-top: 7px;
+  font-size: 20px;
+}
+
+.A {
+  transform: scaleY(-1);
+}
+.G {
+  transform: scaleY(-1);
+}
+.transbox {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+.black_2 {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.black_5 {
+  margin-top: 6px;
+  margin-left: 6px;
 }
