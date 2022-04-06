@@ -9,8 +9,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 30px 1080px 30px;
-  grid-template-rows: 30px 350px 300px 40px 30px;
+  grid-template-columns: 40px 1080px 40px;
+  grid-template-rows: 30px 350px 300px 60px 30px;
   grid-template-areas:
     "top-white-tab top-white-tab top-white-tab"
     "left-orange-tab image right-to-green-tab"
@@ -23,10 +23,12 @@ body {
   grid-area: top-white-tab;
   border: solid;
   border-color: orange;
+  text-align: center;
+  padding-top: 3px;
 }
 
 .left-orange-tab {
-  display: flex;
+  padding-right: 9px;
   grid-area: left-orange-tab;
   background: orange;
   color: white;
@@ -38,19 +40,18 @@ body {
 }
 
 .left-white-tab {
-  display: flex;
+  padding-right: 9px;
   grid-area: left-white-tab;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  font-size: 12px;
+  font-size: 13px;
   border: solid;
   border-color: orange;
+  padding-top: 5px;
 }
 
 .left-icon-tab {
   grid-area: left-icon-tab;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   font-size: 12px;
   border: solid;
   border-color: orange;
@@ -66,6 +67,8 @@ body {
   border-color: orange;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  padding-right: 8px;
+  padding-top: 5px;
 }
 
 .right-to-bot-tab {
@@ -74,10 +77,32 @@ body {
   border-color: orange;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  padding-top: 5px;
+  padding-right: 8px;
 }
 
 .bottom-white-tab {
   grid-area: bottom-white-tab;
   border: solid;
   border-color: orange;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.ins-logo {
+  margin-left: 3px;
+  position: absolute;
+}
+.youtube-logo {
+  margin-top: 30px;
+  position: absolute;
+}
+
+.title {
+  text-align: center;
+  margin-top: 400px;
+  margin-left: 350px;
+  position: absolute;
+  font-size: 70px;
+  color: rgb(125, 173, 229);
 }
