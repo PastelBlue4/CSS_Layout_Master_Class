@@ -9,16 +9,17 @@ body {
 
 .tab-grid-container {
   display: grid;
-  grid-template-columns: repeat(500px, 5);
-  grid-template-rows: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 35px;
   grid-template-areas: "tab-grid-1 tab-grid-2 tab-grid-3 tab-grid-4 tab-grid-5 ";
+  font-size: 13px;
 }
 
 .tab-grid-1 {
   grid-area: tab-grid-1;
   border: 2px solid;
   border-color: black;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-left: 5px;
 }
 .tab-grid-2 {
@@ -26,7 +27,7 @@ body {
   border: 2px solid;
   border-color: black;
   border-left: none;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-left: 5px;
 }
 .tab-grid-3 {
@@ -34,7 +35,7 @@ body {
   border: 2px solid;
   border-color: black;
   border-left: none;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-left: 5px;
 }
 .tab-grid-4 {
@@ -42,7 +43,7 @@ body {
   border: 2px solid;
   border-color: black;
   border-left: none;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-left: 5px;
 }
 .tab-grid-5 {
@@ -50,6 +51,153 @@ body {
   border: 2px solid;
   border-color: black;
   border-left: none;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-left: 5px;
+}
+.item-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "item-1 item-2 item-3"
+    "item-4 item-5 item-6"
+    "item-7 item-8 item-9";
+  border: 2px solid;
+  border-color: black;
+}
+
+.item-1 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-1;
+  border: 2px solid;
+  border-color: black;
+  border-left: none;
+}
+.item-2 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-2;
+  border: 2px solid;
+  border-color: black;
+}
+.item-3 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-3;
+  border: 2px solid;
+  border-color: black;
+  border-right: none;
+}
+.item-4 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-4;
+  border: 2px solid;
+  border-color: black;
+  border-left: none;
+}
+.item-5 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-5;
+  border: 2px solid;
+  border-color: black;
+}
+.item-6 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-6;
+  border: 2px solid;
+  border-color: black;
+  border-right: none;
+}
+.item-7 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-7;
+  border: 2px solid;
+  border-color: black;
+  border-left: none;
+}
+.item-8 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-8;
+  border: 2px solid;
+  border-color: black;
+}
+.item-9 {
+  display: grid;
+  grid-template-columns: 20px 400px 20px;
+  grid-template-rows: 20px 300px 20px;
+  grid-template-areas:
+    "top top top"
+    "image image imgae"
+    "bot bot bot";
+  grid-area: item-9;
+  border: 2px solid;
+  border-color: black;
+  border-right: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  grid-area: top;
+  padding: 10px;
+}
+.image {
+  margin-top: 50px;
+  margin-left: 120px;
+  width: 200px;
+  height: 200px;
+  grid-area: image;
+}
+.bot {
+  grid-area: bot;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
