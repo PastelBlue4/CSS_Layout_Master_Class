@@ -6,3 +6,127 @@ body {
   width: 100%;
   height: 100vh;
 }
+
+.grid-map {
+  display: grid;
+  grid-template-columns: 1.6fr 30px 1fr;
+  grid-template-rows: 1fr;
+}
+.orange-box-container {
+  padding: 10px;
+  background-color: #fd8419;
+}
+.orange-box {
+  height: 100%;
+  background-color: #fd8419;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px;
+  border: 1px solid #f81a16;
+}
+.orange-box-item {
+  display: grid;
+  grid-template-columns: 25px 1fr max-content;
+  gap: 2px;
+  color: #f81a16;
+}
+.tag,
+.subtitle,
+.button-letter {
+  background-color: #fd8419;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #f81a16;
+}
+
+.subtitle,
+.button {
+  width: 200px;
+}
+.title {
+  display: flex;
+  grid-row: span 2;
+  width: 900px;
+  font-size: 50px;
+  font-weight: 600;
+  background-color: #fd8419;
+  align-items: center;
+  border: 3px solid #f81a16;
+}
+
+.button-letter {
+  margin-top: 20px;
+  background-color: #f81a16;
+  color: #f07404;
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 20%;
+}
+.tag {
+  grid-row: span 2;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotateZ(180deg);
+}
+.center-tab {
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  font-size: 20px;
+}
+.center-tab-pink {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #df4def;
+  writing-mode: vertical-rl;
+}
+.center-tab-blue {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  writing-mode: vertical-rl;
+  background-color: #3648ee;
+  transform: rotateZ(180deg);
+}
+.red-box-header-container {
+  background-color: #f81a16;
+  height: 100%;
+}
+.red-box-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+.red-box-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.red-box-header div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.red-box-header .circle {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.red-box-container section {
+  margin: 10px;
+  padding: 10px 0;
+  border-top: 1px solid black;
+}
+.red-header,
+.red-box-title {
+  font-weight: 600;
+}
+.red-box-letters {
+  font-size: 14px;
+}
