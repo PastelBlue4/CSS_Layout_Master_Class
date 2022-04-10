@@ -6,3 +6,156 @@ body {
   width: 100%;
   height: 100vh;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 0.5fr);
+  grid-template-rows: repeat(10, 80px);
+  border: 1px solid black;
+}
+.tag {
+  display: flex;
+  font-size: 12px;
+  margin: 7px;
+}
+
+.A1OFFICE-box-container h2 {
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+}
+
+.table div {
+  display: flex;
+  border-top: 1px solid black;
+  height: 30px;
+  align-items: center;
+}
+
+.last {
+  border-bottom: 1px solid black;
+}
+.first {
+  background-color: rgb(238, 220, 248);
+}
+
+.table div span {
+  margin-left: 7px;
+}
+
+.contact-box {
+  display: flex;
+  height: 57vh;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 7px;
+}
+.contact-box span {
+  margin-bottom: 5px;
+}
+.contact-number {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contact-address1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contact-address2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.select-lang {
+  margin-bottom: 15px;
+}
+.contact-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.Home-box-container h2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  margin-left: 7px;
+}
+
+.Home-box-container span {
+  margin-left: 7px;
+}
+
+.Home-box-letter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+}
+
+.A1OFFICE-box-container {
+  grid-area: 1 / 1 / 11 / 4;
+  border: 1px solid black;
+}
+
+.Home-box-container {
+  grid-area: 1 / 4 / 9 / 7;
+  border: 1px solid black;
+}
+
+.Service-box-container {
+  grid-area: 9 / 4 / 11 / 7;
+  border: 1px solid black;
+}
+
+.box-1 {
+  grid-area: 1 / 7 / 9 / 10;
+  border: 1px solid black;
+}
+.box-2 {
+  grid-area: 1 / 10 / 5 / 13;
+  border: 1px solid black;
+}
+.box-3 {
+  grid-area: 5 / 10 / 7 / 12;
+  border: 1px solid black;
+}
+.box-4 {
+  grid-area: 5 / 12 / 6 / 13;
+  border: 1px solid black;
+}
+.box-5 {
+  grid-area: 6 / 12 / 7 / 13;
+  border: 1px solid black;
+}
+.box-6 {
+  grid-area: 7 / 10 / 9 / 11;
+  border: 1px solid black;
+}
+.box-7 {
+  grid-area: 7 / 11 / 9 / 13;
+  border: 1px solid black;
+}
+.box-8 {
+  grid-area: 9 / 7 / 11 / 8;
+  border: 1px solid black;
+}
+.box-9 {
+  grid-area: 9 / 8 / 10 / 9;
+  border: 1px solid black;
+}
+.box-10 {
+  grid-area: 10 / 8 / 11 / 9;
+  border: 1px solid black;
+}
+.box-11 {
+  grid-area: 9 / 9 / 11 / 13;
+  border: 1px solid black;
+}
