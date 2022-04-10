@@ -10,7 +10,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 0.5fr);
-  grid-template-rows: repeat(10, 80px);
+  grid-template-rows: repeat(10, 90px);
   border: 1px solid black;
 }
 .tag {
@@ -20,6 +20,7 @@ body {
 }
 
 .A1OFFICE-box-container h2 {
+  font-size: 27px;
   margin-top: 20px;
   margin-left: 7px;
 }
@@ -88,6 +89,8 @@ body {
   flex-direction: row;
   font-size: 30px;
   margin-left: 7px;
+  margin-top: 50px;
+  word-spacing: 3px;
 }
 
 .Home-box-container span {
@@ -98,6 +101,30 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 7px;
+  font-size: 12px;
+}
+.Home-box-letter span {
+  margin-top: 10px;
+}
+
+.Service-box-container span {
+  font-size: 12px;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.Service-box-container h2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7px;
+  justify-content: flex-end;
+  height: 140px;
+  font-size: 27px;
+  font-weight: 300;
+}
+
+.Service-box {
+  height: 160px;
 }
 
 .A1OFFICE-box-container {
